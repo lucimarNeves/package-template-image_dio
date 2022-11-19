@@ -1,10 +1,8 @@
-
-
 from skimage.io import imread, imsave
 
-def ler_imagem(path, is_gray=False):
-    imagem = imread(path, as_gray = is_gray)
-    return imagem
+def read_image(path, is_gray = False):
+    image = imread(path, as_gray=is_gray)
+    return image
 
-def salvar_imagem(imagem, path):
-    imsave(path, imagem)
+def save_image(image, path):
+    imsave(path, image)
