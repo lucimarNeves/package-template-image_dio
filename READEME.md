@@ -1,41 +1,39 @@
-Repositório com desenvolvimento dos códigos, e arquivos, para entrega do Projeto do Curso de Python para Cientistas de dados: Criação de Pacotes de Processamento de Imagens; da plataforma [DIO - Digital Innovation One](https://web.dio.me/).  
-#
+# package_name
+
 # Processamento de Imagens
 
-Descrição: 
+Description.
 
-O pacote '**processamento_de_imagem**' pode ser usado para:
+The package image_processing is used to:
 
-	Processamento:
-		- Correspondência de Histograma;
-		- Similaridade Estrutural;
-		- Redimensionamento de Tamanhos
+	Processing:
+		- Histogram matching;
+		- Structural similarity;
+		- Resize image
 	
-	Utilitários:
-		- Leitor de Imagem;
-		- Salvador de Imagem;
-		- Exibidor de Imagens;
-		- Exibidor de Resultados;
-		- Exibidor de Histograma
+	Utils:
+		- Read image;
+		- Save image;
+		- Plot image;
+		- Plot result;
+		- Plot histogram
 
-## Instalação:
+## Installation
 
-Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalação do pacote '**processamento_de_imagem**':
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
 
 ```bash
-pip install processamento_de_imagens
+pip install image_processing
 ```
 
-## Uso:
+## Usage
 
-```python
-from package_name.module1_name import file1_name
-file1_name.my_function()
 ```
 
-## Autor:
-Esse Projeto: [LucimarN](https://github.com/GeffyB).  
+## Author
+Lucimar Neves
 Projeto Original: [Karina](https://github.com/tiemi), Instrutora/Professora dessa trilha no [DIO](https://www.dio.me/).
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)  
+
