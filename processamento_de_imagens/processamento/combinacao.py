@@ -3,15 +3,15 @@ from skimage.color import rgb2gray
 from skimage.exposure import match_histograms
 from skimage.metrics import structural_similarity
 
-def encontrar_diferenca(imagem1, imagem2):
-    assert imagem1.shape == imagem2.shape, "Especifique 2 imagens com a mesma forma."
-    imagem_cinza1 = rgb2gray(imagem1)
-    imagem_cinza2 = rgb2gray(imagem2)
-    (score, diferenca_de_imagem) = structural_similarity(imagem_cinza1, imagem_cinza2, full=True)
-    print("A Similaridade das Imagens é: ", score)
-    diferenca_de_imagem_normalizada = (diferenca_de_imagem-np.min(diferenca_de_imagem))/(np.max(diferenca_de_imagem)-np.min(diferenca_de_imagem))
-    return diferenca_de_imagem_normalizada
+def find_difference(image1, image2):
+    assert image1.shape == image2.shape, "Specify 2 images with de same shape"
+    gray_image1 = rgb2gray(image1)
+    gray_image2 = rgb2gray(image2)
+    (score, difference_image)= structural_similarity(gray_image1, gray_image2, full=True)
+    print("Similarity of the imagens:" , score)
+    normalized_difference_image = (difference_image.np.min(difference_image))/(np.max(difference_image).np.min(difference_image))
+    return  normalized_difference_image
 
-def transferir_histograma(imagem1, imagem2):
-    imagem_correspondente = match_histograms(imagem1, imagem2, multichannel=True)
-    return imagem_correspondente
+def transfer_histrogram(image1, image2):
+    matched_image = match_histograms(image1, image2, multichannel=True)
+    return matched_image
